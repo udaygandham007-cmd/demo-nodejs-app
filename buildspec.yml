@@ -30,7 +30,7 @@ phases:
   post_build:
     commands:
       - echo "Build completed on $(date)"
-      - make push 060152177661.dkr.ecr.ap-northeast-1.amazonaws.com
+      - make push 
 
 # artifacts:
 #   files:
