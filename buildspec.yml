@@ -10,9 +10,9 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - sudo amazon-linux-extras list | grep nodejs
+      - sudo amazon-linux-extras list
 
-      - sudo amazon-linux-extras enable nodejs18
+      - sudo amazon-linux-extras enable nodejs14
       - sudo yum clean metadata
       - sudo yum install -y nodejs
 
