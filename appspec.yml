@@ -3,16 +3,11 @@ os: linux
 
 files:
   - source: /
-    destination: /opt/docker-deploy
+    destination: /home/ubuntu/deploy
 
 hooks:
-  BeforeInstall:
+  ApplicationStop:
     - location: scripts/stop_container.sh
-      timeout: 300
-      runas: root
-
-  AfterInstall:
-    - location: scripts/after_install.sh
       timeout: 300
       runas: root
 

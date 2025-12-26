@@ -33,7 +33,7 @@ phases:
       - make push 
 
 
-# artifacts:
-#   files:
-#     - target/*.jar
-#   discard-paths: yes
+artifacts:
+  files:
+    - appspec.yml
+    - scripts/**/*
