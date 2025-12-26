@@ -10,7 +10,7 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - sudo dnf install -y nodejs
+      - sudo yum install -y nodejs
 
 
   pre_build:
