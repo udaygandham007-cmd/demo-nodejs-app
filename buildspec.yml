@@ -10,7 +10,8 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - curl -fsSL https://rpm.nodesource.com/setup_18.x | sudo bash -
+      - sudo amazon-linux-extras enable nodejs18
+      - sudo yum clean metadata
       - sudo yum install -y nodejs
 
 
