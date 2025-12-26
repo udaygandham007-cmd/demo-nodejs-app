@@ -32,6 +32,7 @@ phases:
       - echo "Build completed on $(date)"
       - make push 
 
+
 # artifacts:
 #   files:
 #     - target/*.jar
