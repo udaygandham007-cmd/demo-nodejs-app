@@ -11,6 +11,10 @@ phases:
     commands:
       - echo "Installing dependencies..."
       - sudo yum install -y nodejs
+      - IMAGE_TAG=$CODEBUILD_RESOLVED_SOURCE_VERSION
+      - echo "IMAGE_TAG=$IMAGE_TAG"
+      - touch tag.txt
+      - echo $IMAGE_TAG > tag.txt
 
 
   pre_build:
@@ -35,5 +39,6 @@ phases:
 
 artifacts:
   files:
+    - tag.txt
     - appspec.yml
     - scripts/**/*
