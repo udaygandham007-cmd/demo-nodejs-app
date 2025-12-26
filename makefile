@@ -1,6 +1,6 @@
 # Used by `image`, `push` & `deploy` targets, override as required
-IMAGE_REG ?= ghcr.io
-IMAGE_REPO ?= benc-uk/nodejs-demoapp
+IMAGE_REG ?= 060152177661.dkr.ecr.ap-northeast-1.amazonaws.com
+IMAGE_REPO ?= sample-web-app
 IMAGE_TAG ?= latest
 
 # Used by `deploy` target, sets Azure deployment defaults, override as required
