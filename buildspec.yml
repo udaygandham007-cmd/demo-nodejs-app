@@ -9,7 +9,7 @@ env:
 phases:
   install:
     commands:
-      - echo "Installing dependencies..."
+      - echo "Installing dependencies....."
       - sudo yum install -y nodejs
       - IMAGE_TAG=$CODEBUILD_RESOLVED_SOURCE_VERSION
       - echo "IMAGE_TAG=$IMAGE_TAG"

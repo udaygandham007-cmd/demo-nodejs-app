@@ -1,6 +1,8 @@
 #!/bin/bash
 
 IMAGE_TAG=$(cat /home/ubuntu/deploy/tag.txt)
+echo "IMAGE_TAG=$IMAGE_TAG"
+
 docker pull 060152177661.dkr.ecr.ap-northeast-1.amazonaws.com/sample-web-app:$IMAGE_TAG
 
 docker stop web-app || true
