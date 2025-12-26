@@ -1,7 +1,7 @@
 # Used by `image`, `push` & `deploy` targets, override as required
 IMAGE_REG ?= 060152177661.dkr.ecr.ap-northeast-1.amazonaws.com
 IMAGE_REPO ?= sample-web-app
-IMAGE_TAG ?= $CODEBUILD_RESOLVED_SOURCE_VERSION
+IMAGE_TAG ?= $(CODEBUILD_RESOLVED_SOURCE_VERSION)
 
 # Used by `deploy` target, sets Azure deployment defaults, override as required
 AZURE_RES_GROUP ?= demoapps
