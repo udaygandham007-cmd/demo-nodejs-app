@@ -10,11 +10,7 @@ phases:
   install:
     commands:
       - echo "Installing dependencies..."
-      - sudo amazon-linux-extras list
-
-      - sudo amazon-linux-extras enable nodejs14
-      - sudo yum clean metadata
-      - sudo yum install -y nodejs
+      - sudo dnf install -y nodejs
 
 
   pre_build:
